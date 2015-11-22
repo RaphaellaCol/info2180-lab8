@@ -14,9 +14,7 @@ if( $ALL == 'true' && $LOOKUP == ''){
   $results = mysql_query("SELECT * FROM countries;");
   // echo $results;
   
-  $xml = new SimpleXMLElement($results);
-  $results = $xml;
-  
+
 } else {
   
     $results = mysql_query("SELECT * FROM countries WHERE name LIKE '%$LOOKUP%';");
